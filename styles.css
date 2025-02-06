@@ -1,0 +1,49 @@
+/* Estilos de Eitiboy Adventures */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+header {
+    background: url('pixel-header.png') no-repeat center;
+    background-size: cover;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f0c674;
+    text-decoration: none;
+}
+
+section {
+    margin: 50px 0;
+}
+
+footer {
+    background-color: #000;
+    padding: 10px;
+}
+
+.iconografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.iconografia img {
+    width: 100px;
+    margin: 10px;
+}
