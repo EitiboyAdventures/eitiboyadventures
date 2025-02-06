@@ -47,3 +47,54 @@ footer {
     width: 100px;
     margin: 10px;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 24px; /* Reduce el tamaño para pantallas pequeñas */
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 5px 10px; /* Ajusta márgenes en móviles */
+}
+
+section {
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px; /* Título más pequeño */
+    }
+
+    nav ul li {
+        margin: 5px; /* Más compacto */
+    }
+
+    .iconografia img {
+        width: 80px; /* Reduce el tamaño de las imágenes */
+        margin: 5px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
