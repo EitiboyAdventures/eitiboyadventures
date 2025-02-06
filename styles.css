@@ -44,8 +44,9 @@ footer {
 }
 
 .iconografia img {
-    width: 100px;
-    margin: 10px;
+    width: 300px; /* Ajusta el tamaño deseado */
+    height: auto; /* Mantén la proporción de las imágenes */
+    margin: 10px; /* Espacio entre imágenes */
 }
 body {
     margin: 0;
