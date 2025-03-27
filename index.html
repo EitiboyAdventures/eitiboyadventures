@@ -1,51 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eitiboy Adventures</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eitiboy Adventures™ – Home of the GENCODE System™</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #00ffff;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    nav ul li a {
+      color: #00ffcc;
+      text-decoration: none;
+      background: #111;
+      padding: 8px 12px;
+      border: 1px solid #00ffcc;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+    nav ul li a:hover {
+      background: #00ffcc;
+      color: #000;
+    }
+    section {
+      margin-top: 40px;
+    }
+    .video iframe {
+      max-width: 100%;
+      border: none;
+      margin-top: 15px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>⛏️ Eitiboy Adventures 🎒</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="inicio">
-        <h2>🌍 Explora el mundo con Eitiboy</h2>
-        <p>🛡️ Aventuras épicas y conocimiento sin límites. 🎮</p>
+  <header>
+    <h1>Eitiboy Adventures™</h1>
+    <p>Explorando los límites de la evolución humana a través del GENCODE System™</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#misiones">Misiones</a></li>
+      <li><a href="#lore">GENCODE™ Lore</a></li>
+      <li><a href="#forge-n">FORGE-N Edition™</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="misiones">
+      <h2>Misiones Destacadas</h2>
+      <p>Accede a los vídeos del GENCODE System™: activa genes dormidos, gana habilidades, transforma tu realidad.</p>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      </div>
     </section>
-    
- <section id="nosotros">
-    <h2>🏹 Sobre Nosotros</h2>
-    <p>🎲 Eitiboy Adventures es una odisea educativa, donde exploramos la historia y la cultura como si fueran una gran aventura de RPG. 🏰</p>
- <div class="iconografia">
-    <img src="mochila%20eitiboy.png" alt="Mochila de aventurero - Eitiboy Adventures" width="300">
-    <img src="pala%20eitiboy.png" alt="Pala corta - Eitiboy Adventures" width="300">
-</div>
-</section>
-    
-    <section id="videos">
-        <h2>📺 Nuestros Videos</h2>
-        <p>Aquí aparecerán nuestras aventuras más recientes de YouTube y TikTok. 📜</p>
+
+    <section id="lore">
+      <h2>GENCODE System™ – Lore</h2>
+      <p>El GENCODE System™ es una interfaz narrativa basada en ciencia y evolución. Cada misión desbloquea hábitos que activan genes reales como FOXO3, BDNF, mTOR o PGC-1α. Es un sistema operativo para la transformación humana, en formato de aventura retro.</p>
     </section>
-    
+
+    <section id="forge-n">
+      <h2>FORGE-N Edition™</h2>
+      <p>La base teórica del sistema. Aquí se construyen los fundamentos: epigenética, hormesis, neuroplasticidad, longevidad y historia ancestral. Este es el fuego que forja tus misiones.</p>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Explorador de límites, creador de Eitiboy Adventures™, profesor de historia y mente obsesionada con cómo recuperar lo que la civilización nos apagó. Este canal es mi mapa, mi escudo y mi legado para mi hija, y para quienes sientan que hay algo más allá de lo que nos ofrecen.</p>
+    </section>
+
     <section id="contacto">
-        <h2>📬 Contacto</h2>
-        <p>Puedes enviarnos un mensaje a <a href="mailto:eitiboyadventures@gmail.com">eitiboyadventures@gmail.com</a></p>
+      <h2>Contacto</h2>
+      <p>📧 <a href="mailto:eitiboyadventures@gmail.com">eitiboyadventures@gmail.com</a></p>
+      <p>Canal YouTube: <a href="https://www.youtube.com/@eitiboyadventures" target="_blank">Eitiboy Adventures™</a></p>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 🏰 Eitiboy Adventures - Forjando Historias Legendarias. ⚔️</p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eitiboy Adventures™ – Marca en trámite. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
