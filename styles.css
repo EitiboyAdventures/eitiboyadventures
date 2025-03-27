@@ -131,11 +131,20 @@ p {
   margin-bottom: 40px;
 }
 
+/* Versión por defecto: escritorio */
 .sello-seccion img {
-  width: 100px;
+  width: 140px;
   height: auto;
-  opacity: 0.9;
+  opacity: 0.95;
   transition: transform 0.2s ease;
+  margin-top: 20px;
+}
+
+/* Móvil: vuelve al tamaño más pequeño */
+@media (max-width: 768px) {
+  .sello-seccion img {
+    width: 100px;
+  }
 }
 
 .sello-seccion img:hover {
