@@ -249,3 +249,33 @@ footer {
     padding: 15px 10px;
   }
 }
+#gencode-log {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 2px dashed #333;
+}
+
+#gencode-log h2 {
+  font-family: 'Press Start 2P', monospace;
+  color: #00ffff;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.log-mision {
+  background-color: #111;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: left;
+  border-left: 4px solid #00ffcc;
+}
+
+.log-mision h3 {
+  color: #f0c674;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
