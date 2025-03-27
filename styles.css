@@ -13,6 +13,8 @@ body {
   line-height: 1.8;
   font-size: 20px;
   padding: 10px;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* CABECERA */
@@ -70,7 +72,7 @@ nav a:hover {
 section {
   padding: 40px 20px;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   border-bottom: 1px dashed #333;
 }
 
@@ -85,6 +87,23 @@ p {
   font-size: 20px;
   margin-bottom: 20px;
   padding: 0 20px;
+  word-wrap: break-word;
+}
+
+/* CARTUCHO PRINCIPAL */
+.cartucho-principal {
+  margin: 40px auto;
+  max-width: 550px;
+  padding: 10px;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  background-color: #111;
+}
+
+.cartucho-principal img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 /* GALERÍA DE CARTUCHOS */
@@ -109,50 +128,27 @@ p {
   filter: brightness(1.2);
 }
 
-/* CARTUCHO PRINCIPAL (drive) */
-.cartucho-principal {
-  margin: 40px auto;
-  max-width: 550px;
-  padding: 10px;
-  border: 2px solid #00ffcc;
-  border-radius: 8px;
-  background-color: #111;
-}
-
-.cartucho-principal img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-/* SELLO CERTIFIED */
+/* SELLO CERTIFIED HUMAN UPGRADE */
 .sello-seccion {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
 }
 
-/* Versión por defecto: escritorio */
 .sello-seccion img {
   width: 300px;
   max-width: 90vw;
   height: auto;
   opacity: 0.95;
-  transition: transform 0.2s ease;
-  margin: 30px auto;
   border: 2px solid #00ffcc;
   border-radius: 8px;
-}
-
-/* Móvil: vuelve al tamaño más pequeño */
-@media (max-width: 768px) {
-  .sello-seccion img {
-    width: 100px;
-  }
+  transition: transform 0.2s ease, filter 0.2s;
 }
 
 .sello-seccion img:hover {
   transform: scale(1.05);
-  opacity: 1;
+  filter: brightness(1.2);
 }
 
 /* BOTÓN START */
@@ -237,7 +233,7 @@ footer {
   }
 
   .sello-seccion img {
-    width: 80px;
+    width: 100px;
   }
 
   .start-button {
