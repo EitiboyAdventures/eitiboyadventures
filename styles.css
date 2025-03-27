@@ -17,6 +17,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Elimina bordes de todas las imágenes */
+img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* CABECERA */
 header {
   padding: 40px 20px;
@@ -95,9 +102,8 @@ p {
   margin: 40px auto;
   max-width: 550px;
   padding: 10px;
-  border: 2px solid #00ffcc;
-  border-radius: 8px;
   background-color: #111;
+  border-radius: 8px;
 }
 
 .cartucho-principal img {
@@ -118,7 +124,6 @@ p {
 .cartuchos img {
   width: 300px;
   max-width: 90vw;
-  border: 2px solid #00ffcc;
   border-radius: 8px;
   transition: transform 0.2s ease, filter 0.2s;
 }
@@ -128,7 +133,7 @@ p {
   filter: brightness(1.2);
 }
 
-/* SELLO CERTIFIED (sin borde, tamaño grande) */
+/* SELLO CERTIFIED */
 .sello-seccion {
   display: flex;
   justify-content: center;
@@ -140,7 +145,6 @@ p {
   width: 360px;
   max-width: 90vw;
   height: auto;
-  opacity: 1;
   border-radius: 8px;
   transition: transform 0.2s ease, filter 0.2s;
 }
@@ -244,18 +248,4 @@ footer {
     font-size: 10px;
     padding: 15px 10px;
   }
-}
-.sello-seccion img {
-  border: none !important;
-  box-shadow: none !important;
-}
-img {
-  border: none !important;
-  box-shadow: none !important;
-}
-img {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  border-color: transparent !important;
 }
