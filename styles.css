@@ -8,9 +8,10 @@
 body {
   background-color: #0a0a0a;
   color: #ffffff;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'VT323', monospace;
   text-align: center;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 /* CABECERA */
@@ -21,6 +22,7 @@ header {
 }
 
 header h1 {
+  font-family: 'Press Start 2P', monospace;
   font-size: 22px;
   color: #00ffcc;
   margin-bottom: 10px;
@@ -28,7 +30,7 @@ header h1 {
 
 header p {
   color: #f0c674;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* NAVEGACIÓN */
@@ -54,6 +56,8 @@ nav a {
   border: 1px solid #f0c674;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
 }
 
 nav a:hover {
@@ -70,6 +74,7 @@ section {
 }
 
 h2 {
+  font-family: 'Press Start 2P', monospace;
   color: #00ffff;
   margin-bottom: 20px;
   font-size: 16px;
@@ -97,6 +102,41 @@ h2 {
   filter: brightness(1.2);
 }
 
+/* CARTUCHO PRINCIPAL */
+.cartucho-principal {
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 10px;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  background-color: #111;
+}
+
+.cartucho-principal img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* BOTÓN START */
+.start-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  color: #0a0a0a;
+  background-color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: transparent;
+  color: #00ffcc;
+}
+
 /* FOOTER */
 footer {
   background-color: #000;
@@ -108,23 +148,54 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  body {
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+  }
+
   header h1 {
     font-size: 18px;
   }
 
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   nav ul li {
-    margin: 5px 10px;
+    margin: 5px 0;
   }
 
   h2 {
     font-size: 14px;
   }
 
+  p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
   section {
     padding: 20px 10px;
   }
 
+  .cartuchos img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .cartucho-principal {
+    max-width: 100%;
+    margin: 30px auto;
+  }
+
+  .start-button {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
   footer {
-    font-size: 8px;
+    font-size: 9px;
+    padding: 15px 10px;
   }
 }
