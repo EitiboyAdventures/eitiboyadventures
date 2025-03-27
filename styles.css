@@ -125,6 +125,24 @@ p {
   border-radius: 6px;
 }
 
+/* SELLO CERTIFIED */
+.sello-seccion {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.sello-seccion img {
+  width: 100px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+}
+
+.sello-seccion img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
 /* BOTÓN START */
 .start-button {
   display: inline-block;
@@ -206,6 +224,10 @@ footer {
     height: auto;
   }
 
+  .sello-seccion img {
+    width: 80px;
+  }
+
   .start-button {
     font-size: 14px;
     padding: 12px 20px;
@@ -215,16 +237,4 @@ footer {
     font-size: 10px;
     padding: 15px 10px;
   }
-}
-header {
-  position: relative;
-}
-
-.sello-header {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 80px;
-  height: auto;
-  z-index: 10;
 }
