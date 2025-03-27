@@ -253,3 +253,9 @@ img {
   border: none !important;
   box-shadow: none !important;
 }
+img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
