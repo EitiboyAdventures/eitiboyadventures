@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GENCODE Log – Misiones activas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'VT323', monospace;
+      background-color: #000;
+      color: #ccc;
+      padding: 2em;
+    }
+    h1 {
+      color: #00ffcc;
+      font-size: 2em;
+    }
+    .cartucho-log {
+      margin-bottom: 1.5em;
+    }
+    .cartucho-log summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 1.4em;
+      background-color: #111;
+      padding: 0.5em;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .cartucho-icon {
+      width: 40px;
+      height: auto;
+      margin-right: 12px;
+    }
+    details[open] summary {
+      background-color: #222;
+    }
+    details p {
+      margin-left: 52px;
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    a {
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🕹️ Cartuchos Ejecutados</h1>
+  <p>Haz clic sobre cada cartucho para desplegar su información. Cada misión del GENCODE System™ activa rutas genéticas reales mediante hábitos concretos. Si completas una, deja constancia en los comentarios del vídeo. Este es tu archivo jugable.</p>
+
+  <div class="cartucho-log">
+    <details>
+      <summary>
+        <img src="img/GENCODE_SYSTEM.png" alt="Cartucho GENCODE" class="cartucho-icon" />
+        <strong>Q-001:</strong> Explora tu mazmorra
+      </summary>
+      <p><strong>Atributo:</strong> 🧠 MENTE</p>
+      <p><strong>Objetivo:</strong> 15 minutos al día durante 7 días sin pantallas ni estímulos.</p>
+      <p><strong>Genes:</strong> BDNF, NR3C1, SIRT1</p>
+      <p><a href="https://youtu.be/VIDEO001" target="_blank">▶ Ver misión</a></p>
+    </details>
+  </div>
+
+  <div class="cartucho-log">
+    <details>
+      <summary>
+        <img src="img/GENCODE_SYSTEM.png" alt="Cartucho GENCODE" class="cartucho-icon" />
+        <strong>Q-002:</strong> La forja del frío
+      </summary>
+      <p><strong>Atributo:</strong> 🌡 ADAPTACIÓN</p>
+      <p><strong>Objetivo:</strong> Duchas frías progresivas de 10 a 70 segundos.</p>
+      <p><strong>Genes:</strong> UCP1, PGC-1α, NRF2</p>
+      <p><a href="https://youtu.be/VIDEO002" target="_blank">▶ Ver misión</a></p>
+    </details>
+  </div>
+
+  <div class="cartucho-log">
+    <details>
+      <summary>
+        <img src="img/GENCODE_SYSTEM.png" alt="Cartucho GENCODE" class="cartucho-icon" />
+        <strong>Q-003:</strong> El ayuno del guerrero
+      </summary>
+      <p><strong>Atributo:</strong> ♻️ REPARACIÓN</p>
+      <p><strong>Objetivo:</strong> Ayuno de 16h 1 vez por semana. Bonus: caminata durante el ayuno.</p>
+      <p><strong>Genes:</strong> AMPK, PGC-1α, SIRT1, FOXO3</p>
+      <p><a href="https://youtu.be/VIDEO003" target="_blank">▶ Ver misión</a></p>
+    </details>
+  </div>
+
+</body>
+</html>
